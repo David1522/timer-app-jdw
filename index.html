@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="icon" href="./IMG/tomato-icon.png">
+  <link rel="stylesheet" href="./CSS/app-timer-styles.css">
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="brand-container">
+      <img src="./IMG/tomato-icon.png" alt="tomato-logo" class="tomato-logo">
+      <h1 class="brand-name">Pomodoro Timer</h1>
+    </div>
+    
+    <div class="menu-checkbox-container">
+      <button class="menu-silder-button"><img src="./IMG/menu-icon.png" alt="menu-icon" class="menu-icon"></button>
+    </div>
+
+    <div id="silder-menu-container" class="animate__animated animate__faster">
+      <form action="#" id="update-time-form">
+        <div class="focus-time">
+          <label for="focus-time-input">Focus</label>
+          <article>Focus duration: <input type="number" id="focus-time-input" class="time-input" step="5" value="0" min="0"> minutes.</article>
+        </div>
+  
+        <div class="brake-time">
+          <label for="breake-time-input">Short Break</label>
+          <article>Short break duration: <input type="number" id="break-time-input" class="time-input" step="5" value="0" min="0"> minutes.</article>
+        </div>
+
+        <div class="alert-container"></div>
+
+        <div class="update-container">
+          <input type="button" value="Update" id="update-input">
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="app-container">
+      <div class="base-timer">
+        <p class="countdown"></p>
+      </div>
+  
+      <div class="buttons-container">
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+
+      <div class="alert-countdown-container"></div>
+    </div>
+  </main>
+
+  <script src="./JS/slider-menu.js"></script>
+  <script src="./JS/app-update.js"></script>
+  <script src="./JS/app-countdown.js"></script>
+</body>
+
+</html>

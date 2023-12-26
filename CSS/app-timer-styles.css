@@ -1,0 +1,69 @@
+.app-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-timer {
+  width: 300px;
+  height: 300px;
+  border: 10px solid red;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown {
+  font-family: arial;
+  font-size: 70px;
+  text-align: center;
+}
+
+.buttons-container {
+  margin-top: 15px;
+}
+
+.buttons-container button {
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  margin: 15px 15px;
+}
+
+#start-btn {
+  background-color: green;
+}
+
+#stop-btn {
+  background-color: orange;
+}
+
+#reset-btn {
+  background-color: red;
+}
+
+#start-btn:disabled {
+  background-color: grey;
+}
+
+#stop-btn:disabled {
+  background-color: grey;
+}
+
+#reset-btn:disabled {
+  background-color: grey;
+}
+
+.alert-countdown-container p {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}

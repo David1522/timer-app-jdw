@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.header-container {
+  background-color: red;
+  color: #fff;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-container {
+  display: flex;
+  width: auto;
+  align-items: center;
+  height: 80px;
+  padding-left: 50px;
+}
+
+.tomato-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-name {
+  padding-left: 25px;
+  letter-spacing: -1px;
+}
+
+.menu-silder-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-checkbox-container {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.menu-icon {
+  filter: invert(1);
+  width: 30px;
+}
+
+#silder-menu-container {
+  background-color: #fff;
+  color: black;
+  width: 50%;
+  height: 89vh;
+  border: 2px solid red;
+  padding: 25px;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  display: none;
+}
+
+#silder-menu-container.active {
+  display: block;
+}
+
+#silder-menu-container label {
+  color: red;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid red;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.time-input {
+  width: 50px;
+  height: 22px;
+  text-align: center;
+}
+
+.update-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.alert-container p{
+  color: red;
+  font-weight: bold;
+}
+
+#update-input {
+  background-color: red;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
